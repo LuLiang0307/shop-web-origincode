@@ -1,0 +1,13 @@
+.container{
+	.uni-margin-wrap{
+		width: 100%;
+		.swiper{
+			height: calc(100vw*540/1080);
+			uni-image{
+				width: 100%;
+				height: calc(100vw*540/1080);
+			}
+		}
+				
+	}
+}	
