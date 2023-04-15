@@ -47,11 +47,7 @@
 	.multi-card{
 		padding: 0 !important;margin: 0 !important;
 		.uni-card{
-			padding: 0 !important;margin: 0 !important;
-			border: none;
-			box-shadow: none !important;
 			.uni-card__content{
-				padding: 0 !important;margin: 0 !important;
 				display: flex;
 				flex-direction: row;
 				flex-wrap: wrap;

@@ -29,4 +29,16 @@
 		color: #333;
 		padding: 10px;
 	}
+	.uni-card{
+		padding: 0 !important;margin: 0 !important;
+		border: none !important;
+		box-shadow: none !important;
+		.uni-card__header{
+			border: none;
+		}
+		.uni-card__content{
+			padding: 0 !important;margin: 0 !important;
+			
+		}
+	}
 </style>
