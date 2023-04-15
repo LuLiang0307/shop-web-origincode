@@ -1,6 +1,5 @@
 <template>
 	<view class="category">		
-		<uni-card>
 			<uni-nav-bar :fixed="true" background-color="#F5F5F6" status-bar leftWidth="0px" rightWidth="0px" title="自定义导航栏">
 				<view class="input-view">
 					<uni-easyinput prefixIcon="search" v-model="value" placeholder="搜索商品名称" @iconClick="iconClick"
@@ -8,7 +7,6 @@
 				</view>
 			</uni-nav-bar>
 			<menu-side-bar></menu-side-bar>
-			</uni-card>
 	</view>
 </template>
 

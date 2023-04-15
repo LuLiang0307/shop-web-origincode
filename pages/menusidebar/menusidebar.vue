@@ -54,7 +54,7 @@
 							},
 							{
 								"cat": 384,
-								"name": "、XiaoMi 13",
+								"name": "XiaoMi 13",
 								"icon": "/static/categories/XiaoMi/XiaoMi13.png",
 								"key": "XiaoMi13"
 							}
@@ -161,7 +161,7 @@
 						]
 					},
 
-				], // 渲染的数据，放在最后供你们测试
+				], 
 				arr: [], // 储存距离顶部高度的数组
 				scrollRightTop: 0, // 右边栏目scroll-view的滚动条高度
 				timer: null // 定时器
@@ -335,20 +335,16 @@
 		font-size: 30rpx;
 		font-weight: 500;
 		background: #D6FFE7;
+		&::before {
+			content: "";
+			position: absolute;
+			border-left: 4px solid #06A446;
+			height: 52rpx;
+			left: 0;
+			top: 29rpx;
+		}
 	}
 
-	.u-tab-item-active::before {
-		content: "";
-		position: absolute;
-		border-left: 4px solid #06A446;
-		height: 52rpx;
-		left: 0;
-		top: 29rpx;
-	}
-
-	.u-tab-view {
-		height: 100%;
-	}
 
 	.right-box {
 		background-color: rgb(250, 250, 250);
