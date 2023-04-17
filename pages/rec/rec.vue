@@ -1,6 +1,6 @@
 <template>
 	<view class="grid-container rec">
-		<img :class="item.class" v-for="(item, index) in info" :key="index" :src="item.src" alt="item.text">
+		<img :class="item.class" v-for="(item, index) in info" :key="index" :src="item.src" alt="item.text" @click="intoInfo(item)">
 	</view>
 </template>
 
@@ -27,7 +27,11 @@
 			}
 		},
 		methods: {
-
+			intoInfo(e){
+				uni.navigateTo({
+					url: '/pages/nothing/nothing'
+				})
+			}
 		}
 	}
 </script>

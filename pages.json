@@ -28,11 +28,10 @@
 			}
 		}
         ,{
-            "path" : "pages/user/user",
+            "path" : "pages/nothing/nothing",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "loading"
             }
             
         }

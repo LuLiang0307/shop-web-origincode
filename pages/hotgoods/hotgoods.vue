@@ -1,7 +1,7 @@
 <template>
 	<view class="hot-goods">
 		<uni-card>
-			<img class="big-img" src="/static/hot.png" alt="">
+			<img class="big-img" src="/static/hot.png" alt="" @click="intoInfo">
 			<uni-grid :column="2" borderColor="#fff">
 				<uni-grid-item v-for="(item, index) in info" :key="index">
 					<view class="grid-item-box">
@@ -9,7 +9,7 @@
 						<uni-title type="h4" :title="item.title" align="center"></uni-title>
 						<text class="text">{{item.text}}</text>
 						<text class="price" type="h5" align="center">￥{{item.price}}起</text>
-						<button type="warn" size="mini">立即购买</button>							
+						<button type="warn" size="mini" @click="intoInfo">立即购买</button>							
 					</view>
 				</uni-grid-item>
 			</uni-grid>
@@ -39,6 +39,11 @@
 		methods: {
 			clickAt(){
 				
+			},
+			intoInfo(){
+				uni.navigateTo({
+					url: '/pages/nothing/nothing'
+				})
 			}
 		}
 	}

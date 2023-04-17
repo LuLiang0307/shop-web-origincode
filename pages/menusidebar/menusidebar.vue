@@ -18,7 +18,7 @@
 						</view>
 						<view class="item-container">
 							<view class="thumb-box" v-for="(item1, index1) in item.goods" :key="index1"
-								@click="featureC(item1.cat, item1.name)">
+								@click="intoInfo(item1)">
 								<image v-if="item1.icon != ''" class="item-menu-image" :src="item1.icon" mode="">
 								</image>
 								<view v-else class="item-menu-image row-c" style="background-color: #F4F6F8;">
@@ -168,6 +168,11 @@
 			}
 		},
 		methods: {
+			intoInfo(e){
+				uni.navigateTo({
+					url: '/pages/nothing/nothing'
+				})
+			},
 			//分别获取左侧和右侧每一个类别的高度
 			getElRect(elClass, dataVal) {
 				new Promise((resolve, reject) => {

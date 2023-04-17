@@ -2,7 +2,7 @@
 	<view class="uni-margin-wrap">
 		<swiper class="swiper" circular @change="change" :indicator-dots="indicatorDots" :autoplay="autoplay"
 			:interval="interval" :duration="duration">
-			<swiper-item v-for="(item ,index) in info" :key="index">
+			<swiper-item v-for="(item ,index) in info" :key="index" @click="intoInfo">
 				<view class="swiper-item">
 					<image :src="item.src" alt=""></image>
 				</view>
@@ -34,8 +34,12 @@
 		methods: {
 			change(e) {
 				this.current = e.detail.current;
-			}		
-			
+			},
+			intoInfo(){
+				uni.navigateTo({
+					url: '/pages/nothing/nothing'
+				})
+			}
 		}
 	}
 </script>
